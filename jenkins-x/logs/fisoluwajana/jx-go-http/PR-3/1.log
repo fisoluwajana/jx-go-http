@@ -1,0 +1,80 @@
+
+Showing logs for build [32mfisoluwajana-jx-go-http-pr-3-se-1[0m stage [32mmeta-pipeline[0m and container [32mstep-credential-initializer-9ppxc[0m
+{"level":"warn","ts":1568303260.663792,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1568303260.6642716,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mfisoluwajana-jx-go-http-pr-3-se-1[0m stage [32mmeta-pipeline[0m and container [32mstep-working-dir-initializer-qzgcf[0m
+{"level":"warn","ts":1568303261.9887805,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1568303261.9904068,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+
+Showing logs for build [32mfisoluwajana-jx-go-http-pr-3-se-1[0m stage [32mmeta-pipeline[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mfisoluwajana-jx-go-http-pr-3-se-1[0m stage [32mmeta-pipeline[0m and container [32mstep-git-source-meta-fisoluwajana-jx-go-http-pr-6rh2d[0m
+{"level":"warn","ts":1568303268.0670314,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1568303269.121645,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/************/**-go-http.git @ 331860623486abf298ce69cb17ec49df1c034067 in path /workspace/source"}
+
+Showing logs for build [32mfisoluwajana-jx-go-http-pr-3-se-1[0m stage [32mmeta-pipeline[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:331860623486abf298ce69cb17ec49df1c034067,3:fa66be03ea46728941608f8dca066d7c4bced5d7
+DEBUG: ran git fetch --unshallow origin fa66be03ea46728941608f8dca066d7c4bced5d7: 331860623486abf298ce69cb17ec49df1c034067: in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard 331860623486abf298ce69cb17ec49df1c034067 in 
+DEBUG: ran clean --force -d . in 
+DEBUG: ran git merge fa66be03ea46728941608f8dca066d7c4bced5d7 in 
+Merged SHA fa66be03ea46728941608f8dca066d7c4bced5d7 with commit message 'New welcome message' into base branch master
+Merged SHA eb18441aacba5aa715c284b66fd54e96240ff7e4 with commit message 'New welcome message' into base branch master
+
+Showing logs for build [32mfisoluwajana-jx-go-http-pr-3-se-1[0m stage [32mmeta-pipeline[0m and container [32mstep-merge-pull-refs[0m
+DEBUG: ran git fetch origin fa66be03ea46728941608f8dca066d7c4bced5d7: 331860623486abf298ce69cb17ec49df1c034067: in 
+DEBUG: Unshallowed git repo in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard 331860623486abf298ce69cb17ec49df1c034067 in 
+DEBUG: ran clean --force -d . in 
+DEBUG: ran git merge fa66be03ea46728941608f8dca066d7c4bced5d7 in 
+Merged SHA fa66be03ea46728941608f8dca066d7c4bced5d7 with commit message 'New welcome message' into base branch master
+Merged SHA eb18441aacba5aa715c284b66fd54e96240ff7e4 with commit message 'New welcome message' into base branch master
+
+Showing logs for build [32mfisoluwajana-jx-go-http-pr-3-se-1[0m stage [32mmeta-pipeline[0m and container [32mstep-create-effective-pipeline[0m
+Deleting and cloning the Jenkins X versions repo
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with ref refs/heads/master to /builder/home/.**/jenkins-x-versions
+Effective pipeline written to jenkins-x-serverless-jenkins-effective.yml
+
+Showing logs for build [32mfisoluwajana-jx-go-http-pr-3-se-1[0m stage [32mmeta-pipeline[0m and container [32mstep-create-tekton-crds[0m
+PipelineActivity for ************-**-go-http-PR-3-1
+Applying changes 
+upserted PipelineResource ************-**-go-http-pr-3-se for the git repository https://github.com/************/**-go-http.git
+upserted Task ************-**-go-http-pr-3-se-from-build-pack-1
+upserted Pipeline ************-**-go-http-pr-3-se-1
+created PipelineRun ************-**-go-http-pr-3-se-1
+created PipelineStructure ************-**-go-http-pr-3-se-1
+
+Showing logs for build [32mfisoluwajana-jx-go-http-pr-3-se-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-x5vjl[0m
+{"level":"warn","ts":1568303280.8354032,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1568303280.8397684,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mfisoluwajana-jx-go-http-pr-3-se-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-qgjzt[0m
+{"level":"warn","ts":1568303281.3050148,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1568303281.3065443,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source /workspace/source/charts/preview\""}
+
+Showing logs for build [32mfisoluwajana-jx-go-http-pr-3-se-1[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mfisoluwajana-jx-go-http-pr-3-se-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-fisoluwajana-jx-go-http-pr-3-se-246g8[0m
+{"level":"warn","ts":1568303286.3669853,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1568303287.4233353,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/************/**-go-http.git @ master in path /workspace/source"}
+
+Showing logs for build [32mfisoluwajana-jx-go-http-pr-3-se-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:331860623486abf298ce69cb17ec49df1c034067,3:fa66be03ea46728941608f8dca066d7c4bced5d7
+DEBUG: ran git fetch --unshallow origin fa66be03ea46728941608f8dca066d7c4bced5d7: 331860623486abf298ce69cb17ec49df1c034067: in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard 331860623486abf298ce69cb17ec49df1c034067 in 
+DEBUG: ran clean --force -d . in 
+DEBUG: ran git merge fa66be03ea46728941608f8dca066d7c4bced5d7 in 
+Merged SHA fa66be03ea46728941608f8dca066d7c4bced5d7 with commit message 'New welcome message' into base branch master
+Merged SHA eb18441aacba5aa715c284b66fd54e96240ff7e4 with commit message 'New welcome message' into base branch master
+
+Showing logs for build [32mfisoluwajana-jx-go-http-pr-3-se-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-make-linux[0m
+CGO_ENABLED=0 GOOS=linux GOARCH=amd64 GO15VENDOREXPERIMENT=1 go build -ldflags '' -o bin/**-go-http main.go
+# command-line-arguments
+./main.go:10:35: unknown escape sequence
+make: *** [linux] Error 2
+[31m
+Pipeline failed on stage 'from-build-pack' : container 'step-build-make-linux'. The execution of the pipeline has stopped.[0m
